@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --secondary-color:black;
+            --size:30px;
+        }
+        div{
+            --primary-color:blue;
+        }
+        h2{
+            color: var(--primary-color);
+            font-size: var(--size);
+        }
+        .container{
+            display:grid;
+            height: 500px;
+            width: 500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: r2epeat(3,1fr);
+            gap: calc(var(--size)/2);
+            outline: 1px solid black;
+            color:white;
+            justify-content: center;
+            border-radius: 20%;
+        }
+        #parent{
+            display:grid;
+            background-color:var(--primary-color);
+            grid-template-columns: subgrid;
+            grid-template-rows: subgrid;
+            grid-column: 1/3;
+            grid-row: 1/3;
+            border-radius: 30% 0 0 0;
+        }
+        #child{
+            background-color: black;
+            grid-column: 2/3;
+            grid-row:2/3;
+            position:relative;
+            cursor:none;
+        }
+        #child:hover{
+            background-color: aqua;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="parent">
+            <div id="child">
+                Hello
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

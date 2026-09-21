@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .conta{
+            width: min(1200px, 100%);
+            margin: 0 auto;
+        }
+
+        .task{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .task h1 {
+            grid-column: 1 / -1;
+            margin: 0 0 8px;
+            text-align: center;
+        }
+
+        .card {
+            min-width: 0;
+            overflow: hidden;
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 16px 0 8px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        @media (max-width: 760px) {
+            body {
+                padding: 20px;
+            }
+
+            .task {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .task {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conta">
+        <div class=task><h1>Task 3 - Products Cards</h1>
+        <div class="card" id="card1" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card2" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card3" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card4" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card5" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card6" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card7" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card8" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        <div class="card" id="card9" style="border: 1px solid black;">
+            <img src="https://picsum.photos/200/300">
+            <h3>Smart Watch</h3>
+            <p>$100</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

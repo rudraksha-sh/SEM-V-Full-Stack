@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #box1,#box2,#box3{
+        background-color:grey;
+        width:100px;
+        height:100px;
+        margin:10px;
+    }
+    #box1:hover,#box2:hover,#box3:hover{
+        box-shadow: 3px 3px 0px 15px black;
+        background-color: black;
+    }
+    #box1:focus{
+        background-color: red;
+        outline-width:3px;
+        outline-color:red;
+        width:250px;
+        height:250px;
+    }
+    #box1:active{
+        background-color:yellow;
+        box-shadow: 0 0 0 transparent solid;
+    }
+    a:visited{
+        pointer-events: NONE;
+        color:pink;
+    }
+    </style>
+</head>
+<body>
+    <button id="box1">1</button>
+    <button id="box2">2</button>
+    <button id="box3">3</button>
+    <a href="https://picsum.com/">link</a>
+    
+</body>
+</html>
