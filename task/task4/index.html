@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        .gla {
+            font-weight: bold;
+            font-size: x-large;
+            color: #1f6b65;
+        }
+
+        .register {
+            background-color: #2965f8;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .hero {
+            background-color: #1f6b65;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .points {
+            background-color: #2965f8;
+            opacity: 55%;
+            border-radius: 10px;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .summit {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .desc {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #heroregister {
+            opacity: 75%;
+            border-radius: 5px;
+        }
+
+        .schedule {
+            background: transparent;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 35px;
+        }
+
+        .card {
+            display: flex;
+            border: 2px solid lightskyblue;
+            gap: 5px;
+            flex: 1 1 150px;
+            border-radius: 5px;
+        }
+
+        .cardlogo {
+            padding: 10px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .l1 {
+            font-size: 12px;
+            color: rgb(60, 58, 58);
+        }
+
+        .l3 {
+            font-size: 13px;
+            color: rgb(60, 58, 58);
+        }
+
+        .eventdet {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        .fs {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid lightgrey;
+            margin-top: 15px;
+            padding: 5px 10px 5 px 10px;
+            border-radius: 5px;
+        }
+
+        .fsheader {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fsdet {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .va {
+            color: #2965f8;
+        }
+
+        .fscards {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .fscard {
+            margin-left: 5px;
+            border-right: 2px solid lightskyblue;
+            border-left: 2px solid lightskyblue;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            flex: 1 1 120px;
+            padding-left: 5px;
+            justify-content: center;
+            place-items: center;
+
+        }
+
+        .img {
+            padding: 2px 2px 2px 2px;
+            background-color: aqua;
+            max-height: fit-content;
+            max-width: fit-content;
+            border-radius: 25px;
+
+        }
+        .evtname{
+            font-weight: bold;
+            font-size: medium;
+            margin-top:5px;
+        }
+        .evttitle{
+            display: flex;
+            flex-direction:row;
+            justify-content: left;
+            width:97vw;
+            border-radius: 5px;            
+            border:2px solid grey;
+        }
+        .schtime{
+            display:flex;
+            flex-direction:column;
+            width:25vw;
+            align-items: start;
+            padding-left:10px;
+        }
+        .session{
+            display:flex;
+            flex-direction:column;
+            width:69vw;
+            align-items: start;
+            padding-left:10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="gla">🏦 GLA University</div>
+        <div class="home">Home</div>
+        <div class="about">About</div>
+        <div class="events">Events</div>
+        <div class="contact">Contact</div>
+        <button class="register">Register Now</button>
+    </div>
+
+    <div class="hero">
+        <div class="points"> Tech - Learn - Connect </div>
+        <div class="summit">TECH SUMMIT 2026</div>
+        <div class="desc">Innovating the Future of Technology</div>
+        <div class="buttons">
+            <button class="register" id="heroregister">Register Now</button>
+            <button class="schedule">View Schedule</button>
+        </div>
+    </div>
+
+    <div class="eventdet">Event Details</div>
+    <div class="cards">
+        <div class="card">
+            <div class="cardlogo">📅</div>
+            <div class="details">
+                <div class="l1">Date</div>
+                <div class="l2">15 Oct 2026</div>
+                <div class="l3">Friday</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardlogo">📅</div>
+            <div class="details">
+                <div class="l1">Date</div>
+                <div class="l2">15 Oct 2026</div>
+                <div class="l3">Friday</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardlogo">📅</div>
+            <div class="details">
+                <div class="l1">Date</div>
+                <div class="l2">15 Oct 2026</div>
+                <div class="l3">Friday</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fs">
+        <div class="fsheader">
+            <div class="fsdet">Featured Speakers</div>
+            <div class="va">View all ➡️</div>
+        </div>
+        <div class="fscards">
+            <div class="fscard">
+                <div class="img">🥷</div>
+                <div class="name">Dr. ABC</div>
+                <div class="desig">Designation</div>
+            </div>
+            <div class="fscard">
+                <div class="img">🥷</div>
+                <div class="name">Dr. ABC</div>
+                <div class="desig">Designation</div>
+            </div>
+            <div class="fscard">
+                <div class="img">🥷</div>
+                <div class="name">Dr. ABC</div>
+                <div class="desig">Designation</div>
+            </div>
+            <div class="fscard">
+                <div class="img">🥷</div>
+                <div class="name">Dr. ABC</div>
+                <div class="desig">Designation</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="evtname">Event Schedule</div>
+    <div class="evttitle">
+        <div class="schtime">
+            <div class="timetitle">Time</div>
+            <div class="l1">10:00</div>
+            <div class="l1">10:00</div>
+            <div class="l1">10:00</div>
+            <div class="l1">10:00</div>
+            <div class="l1">10:00</div>
+        </div>
+        <div class="session">
+            <div class="sessiontitle">Session</div>
+            <div class="l1">Opening Ceremony</div>
+            <div class="l1">Opening Ceremony</div>
+            <div class="l1">Opening Ceremony</div>
+            <div class="l1">Opening Ceremony</div>
+            <div class="l1">Opening Ceremony</div>
+        </div>
+    </div>
+</body>
+
+</html>
