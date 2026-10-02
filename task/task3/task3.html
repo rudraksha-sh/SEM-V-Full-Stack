@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dashboard{
+            display: flex;
+        }
+        .slider{
+            display:flex;
+            flex-direction: column;
+            background-color: #0f192c;
+            flex-grow: 1;
+            height:500px;
+            text-align:center;
+            gap:20px;
+            scrollbar-width: thin;
+        }
+
+        .dashb{
+            background-color: #0f192c;
+            color:aliceblue;
+            outline: #0f192c;
+        }
+
+        .dash{
+            background-color: black;
+            flex-grow:8;
+            height:500px;
+            color: aliceblue;
+        }
+
+        .profile {
+            position: absolute;
+            bottom: 25px;
+            left: 40px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="slider"><p style="color: aliceblue;">AdminPro</p>
+            <button class="dashb">Dashboard</button>
+            <button class="dashb">Analytics</button>
+            <button class="dashb">Users</button>
+            <button class="dashb">Orders</button>
+            <button class="dashb">Products</button>
+            <button class="dashb">Settings</button>
+            <div class="profile" style="color: aliceblue "> <img src="https://picsum.photos/20/20.jpg" alt="" style="border-radius: 80%"> Rudraksha</div>
+        </div>
+        <div class="dash">dashboard</div>
+    </div>
+</body>
+</html>
