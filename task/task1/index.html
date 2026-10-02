@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAS - Landing Page</title>
+    <style>
+        .nav{
+            display:flex;
+            gap:20px;
+            justify-content: space-between;
+        }
+        .center{
+            display:flex;
+            gap:15px;
+        }
+        .LG{
+            display:flex;
+            gap:10px;
+        }
+        .login{
+            background:white;
+            outline-color:white;
+            border-color: white;
+            color:#474ff1;
+        }
+        .GS{
+            background:#474ff1;
+            border-radius: 5px;
+        }
+
+        .hero{
+            display:flex;
+            justify-content: space-between;
+            background-color:linear-gradient(10% white, #edf3fe);
+            padding-bottom: 20px;
+        }
+        .ht{
+            margin-top: 30px;
+        }
+        .desc{
+            margin-top: 0px;
+            margin-bottom:15px
+        }
+        .vd{
+            color:#474ff1;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .frontimg{
+            background-color: aqua;
+            height: 207px;
+            width:190px;
+            justify-content:center;
+            margin-top: 20px;
+            margin-right: 150px;
+            border-radius: 10px;
+        }
+        .action{
+            display:grid;
+            grid-template-columns: 3fr;
+            grid-template-rows: 2fr;
+        }
+        .txt{
+            grid-row:1/2;
+            grid-column:1/3;
+            place-items: center;
+        }
+        .cards{
+            display:flex;
+            gap:20px;
+            margin-top:25px;
+            justify-content:space-evenly;
+        }
+        .card{
+            border:2px solid;
+            border-color: lightgrey;
+            border-radius: 15px;
+            padding-left: 10px;
+            height:150px;
+            width:200px;
+        }
+        .logo{
+            background-color: lightblue;
+            height:20px;
+            width:20px;
+            margin-left:5px;
+            margin-top:5px;
+            margin-bottom: 10px;
+            border-radius:5px;
+            place-items:center;
+        }
+        .cardl1{
+            margin-bottom:15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="com">
+            🏦FlowTask
+        </div>
+        <div class="center">
+            <div class="features">
+                Features
+            </div>
+            <div class="pricing">
+                Pricing
+            </div>
+            <div class="Docs">
+                Docs
+            </div>
+        </div>
+        <div class="LG">
+            <button class="login">
+                Login
+            </button>
+            <button class="GS">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="frontview">
+        <div class="ht"><h1>Build Better Products </br>Faster With Our Platform</h1></div>
+        <div class="desc">Streamline your workflow Streamline your workflow Streamline your </br> workflow Streamline your workflow Streamline your workflow </div>
+        <div class="buttons">
+            <button class="GS"> Get Started</button>
+            <button class="vd">View Demo</button>
+        </div>
+    </div>
+    <div class="frontimg"><img src="#img" alt="#img"></div>
+    </div>
+
+    <div class="action">
+        <div class="txt">
+            <div class="L1"><h2>Powerful Features</h2></div>
+            <div class="l2">Everything you need to build, manage and grow your products.</div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="logo">⚡</div>
+                <div class="cardl1">Fast & Reliable</div>
+                <div class="cardl2">Experiance making fast performance</div>
+            </div>
+            <div class="card">
+                <div class="logo">⚡</div>
+                <div class="cardl1">Fast & Reliable</div>
+                <div class="cardl2">Experiance making fast performance</div>
+            </div>
+            <div class="card">
+                <div class="logo">⚡</div>
+                <div class="cardl1">Fast & Reliable</div>
+                <div class="cardl2">Experiance making fast performance</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
