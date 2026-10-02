@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            display: flex;
+
+        }
+
+        .admin {
+            display: flex;
+            flex-direction: column;
+            width:20vw;
+            background-color: #101a2c;
+            height:100vh;
+        }
+
+        .adminpro {
+            display: flex;
+            gap: 5px;
+            color: white;
+            justify-content: center;
+        }
+
+        .class {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 25px;
+            height:80vh;
+            width:15vw;
+
+        }
+
+        .options {
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: #101a2c;
+            color: white;
+        }
+
+        .options:focus {
+            background-color: #2553be;
+            outline: none;
+        }
+
+        .prof {
+            background-color: #101a2c;
+            display: flex;
+            color: white;
+            border-top: 0.5px solid grey;
+            margin-top: 10px;
+            padding-top: 5px;
+            justify-content: center;
+        }
+
+        .profname {
+            margin-left: 10px;
+        }
+
+        .profimg {
+            border-radius: 5px;
+            
+        }
+
+        .desig {
+            font-size: 15px;
+        }
+
+        .dashboard{
+            width:80vw;
+            display: flex;
+            flex-direction: column;
+            padding-left:10px;
+        }
+
+        .header {
+            display: flex;
+        }
+        .search{
+            outline: none;
+            border:none;
+            background-color: lightgrey;
+            border-radius: 15px;
+            place-items: center;
+            width:65vw;
+            margin-left:30px;
+        }
+
+        .rh {
+            display:flex;
+            justify-self: flex-end;
+            margin-left:100px;
+        }
+        .bell{
+            margin-right: 15px;
+        }
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+        .card{
+            border:2px solid black;
+            flex: 1 1 80px;
+            justify-content: center;
+            align-items: center;
+            padding-left: 8px;
+            
+        }
+        .cardlogo{
+            padding: 1px 1px 1px 1px;
+            background-color:beige;
+            border-radius: 10px;
+            max-width: min-content;
+            
+        }
+        .dname{
+            font-weight:bold;
+        }
+
+        .bigcards{
+            display:grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 2fr;
+
+        }
+        .bigcard{
+            background:#2553be;
+            border:2px solid black;
+            height:37vh;
+            width:38vw;
+            margin-top: 20px;
+            margin-right:10px;
+        }
+        .bigcard2{
+            background:#2553be;
+            border:2px solid black;
+            height:37vh;
+            width:38vw;
+            margin-top: 20px;
+            margin-right:5px;
+        }
+        #bigcard1{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #bigcard2{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start: 2;
+            grid-column-end:3;
+
+        }
+        #bigcard3{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #bigcard4{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="admin">
+            <div class="adminpro">
+                <img src="#logo" alt=" " class="adminlogo">
+                <div class="ap">AdminPro</div>
+            </div>
+            <div class="class">
+                <button class="options">🏠 Dashboard</button>
+                <button class="options">🏠 Dashboard</button>
+                <button class="options">🏠 Dashboard</button>
+                <button class="options">🏠 Dashboard</button>
+                <button class="options">🏠 Dashboard</button>
+                <button class="options">🏠 Dashboard</button>
+            </div>
+            <div class="prof">
+                <img src="#profile image" alt=" " class="profimg">
+                <div class="profname">
+                    <div class="proname">Rudraksha</div>
+                    <div class="desig">Admin</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="header">
+                <input type="text" placeholder="🔍 Search..." class="search">
+                <div class="rh">
+                    <div class="bell">🔔</div>
+                    <img src="#profimg" alt=" " class="profimg">
+                </div>
+            </div>
+            <div class="dname">Dashboard</div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="cardlogo">⚡</div>
+                    <div class="cardname">Total Revenue</div>
+                    <div class="cardamt">$124,000</div>
+                    <div class="review">⬆️ 12% last</div>
+                </div>
+                <div class="card">
+                    <div class="cardlogo">⚡</div>
+                    <div class="cardname">Total Revenue</div>
+                    <div class="cardamt">$124,000</div>
+                    <div class="review">⬆️ 12% last</div>
+                </div>
+                <div class="card">
+                    <div class="cardlogo">⚡</div>
+                    <div class="cardname">Total Revenue</div>
+                    <div class="cardamt">$124,000</div>
+                    <div class="review">⬆️ 12% last</div>
+                </div>
+                <div class="card">
+                    <div class="cardlogo">⚡</div>
+                    <div class="cardname">Total Revenue</div>
+                    <div class="cardamt">$124,000</div>
+                    <div class="review">⬆️ 12% last</div>
+                </div>
+            </div>
+
+            <div class="bigcards">
+                <div class="bigcard" id="bigcard1">
+                    revenue Overview
+                </div>
+                <div class="bigcard2" id="bigcard2">
+                    revenue Overview
+                </div>
+                <div class="bigcard" id="bigcard3">
+                    revenue Overview
+                </div>
+                <div class="bigcard2" id="bigcard4">
+                    revenue Overview
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
