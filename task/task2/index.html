@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display:flex;
+            justify-content: space-between;
+            place-items: space-between;
+        }
+        .com{
+            display:flex;
+            gap:5px;
+            flex:2;
+            margin-left:5px;
+        }
+        .searchbox{
+            border-color: white;
+            background: lightgrey;
+            border-radius:5px;
+            outline-color: lightgrey;
+            outline-width:none;
+            border:none;
+        }
+
+        .searchbox:focus{
+            outline:none;
+        }
+        .search{
+            display: flex;
+            background-color: lightgrey;
+            border-radius: 5px;
+            border-color: lightgrey;
+            flex:4;     
+            justify-content: space-between;       
+        }
+        .cf{
+            display:flex;
+            gap:15px;
+            flex:2;
+            justify-content: end;
+        }
+        .shop{
+            display:flex;
+            gap:10px;
+            padding-top: 25px;
+        }
+        .filters{
+            display:flex;
+            gap:25px;
+            flex-direction:column;
+            border:2px solid black;
+            justify-content: top;
+            flex:2;
+        }
+        .filter{
+            display:flex;
+            flex-direction: column;
+            margin-left: 5px;
+            gap:20px;
+        }
+        .category{            
+            display:flex;
+            flex-direction: column;
+        }
+        .cat{
+            display:flex;
+        }
+        .name{
+            justify-content:center;
+            border:0.5px solid lightgrey;
+        }
+        .apply{
+            background-color: #2563EB;
+            justify-content: center;
+            color:white;
+            border-radius: 5px;
+            margin:10px 10px 10px 10px;
+            padding:2px 2px 2px 2px;
+        }
+        .products{
+            display:grid;
+            grid-area: auto;
+            grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+            grid-template-rows:minmax(1fr,2fr);
+            flex:8;
+            gap:2px;
+        }
+        #prod{
+            border:2px solid lightgrey;
+            place-items: center;
+        }
+        .img{
+            padding:50px;
+            margin:3px 3px 3px 3px ;
+            background-color: #2563EB;
+            border-radius: 5px;;
+        }
+        #atc{
+            justify-content:center;
+            align-items:center;
+            align-self: center;
+            width:160px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="com">
+            <img class="comlogo" src="#img" >
+            <div class="comname">ShopKart</div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" class="searchbox" placeholder="Search for Products...">
+            <span class="searchicon">🔍</span>
+        </div>
+        <div class="cf">
+        <div class="cart">🛒</div>
+        <div class="profile">🥷</div>
+        </div>
+    </div>
+
+    <div class="shop">
+        <div class="filters">
+            <div class="name">Filters</div>
+            <div class="filter">
+                <div class="category"><strong>Category</strong>
+                    <div class="cat"><input type="checkbox" class="cat1"> <div class="catname">Laptop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Desktop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Tab</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Accessories</div></div>
+                </div>
+                <div class="category"><strong>Category</strong>
+                    <div class="cat"><input type="checkbox" class="cat1"> <div class="catname">Laptop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Desktop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Tab</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Accessories</div></div>
+                </div>
+                <div class="category"><strong>Category</strong>
+                    <div class="cat"><input type="checkbox" class="cat1"> <div class="catname">Laptop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Desktop</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Tab</div></div>
+                    <div class="cat"><input type="checkbox" class="cat1"><div class="catname">Accessories</div></div>
+                </div>
+            </div>
+            <button class="apply">Apply Filters</button>
+        </div>
+
+        <div class="products">
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod4" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod1" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod2" id="prod" >
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+            <div class="prod3" id="prod">
+                <section class="img">img</section>
+                <div class="title">Dell Inspiron 15</div>
+                <div class="price">$1250</div>
+                <div class="rating">⭐ 4.5 (12.5k)</div>
+                <button class="apply" id="atc">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
