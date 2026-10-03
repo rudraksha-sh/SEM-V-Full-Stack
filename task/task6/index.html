@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TilePress</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #222;
+        }
+
+        .navname {
+            font-size: 16px;
+            font-weight: bold;
+            color: #b51f2d;
+        }
+
+        .search {
+            width: 45vw;
+            height: 28px;
+            padding: 5px 12px;
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            outline: none;
+        }
+
+        .ico {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .notification,
+        .mail,
+        .prof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prof {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: #777;
+        }
+
+        .dash {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .column {
+            display: block;
+            min-width: 0;
+        }
+
+        .pan {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .panname {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .panid {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 3px;
+        }
+
+        .panidimg {
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: lightgrey;
+        }
+
+        .panidname {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        #img1 {
+            height: 400px;
+            background-color: #df5960;
+        }
+
+        #img2 {
+            height: 260px;
+            background-color: #16b8c4;
+        }
+
+        #img3 {
+            height: 530px;
+            background-color: #e5a51c;
+        }
+
+        #img4 {
+            height: 320px;
+            background-color: #9d63d8;
+        }
+
+        #img5 {
+            height: 210px;
+            background-color: #16b86a;
+        }
+
+        #img6 {
+            height: 250px;
+            background-color: #8b79d8;
+        }
+
+        #img7 {
+            height: 300px;
+            background-color: #18a9a0;
+        }
+
+        #img8 {
+            height: 270px;
+            background-color: #d9564e;
+        }
+
+        #img9 {
+            height: 370px;
+            background-color: #d733bd;
+        }
+
+        #img10 {
+            height: 330px;
+            background-color: #c98978;
+        }
+
+        #img11 {
+            height: 230px;
+            background-color: #92c96f;
+        }
+
+        #img12 {
+            height: 310px;
+            background-color: #256fca;
+        }
+
+        #img13 {
+            height: 280px;
+            background-color: #e47d35;
+        }
+
+        #img14 {
+            height: 240px;
+            background-color: #55a9b5;
+        }
+
+        @media (max-width: 900px) {
+            .dash {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .dash {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .search {
+                width: 40vw;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .dash {
+                grid-template-columns: 1fr;
+            }
+
+            .search {
+                width: 35vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="navname">TilePress</div>
+
+        <input
+            type="text"
+            class="search"
+            placeholder="Search for ideas"
+        >
+
+        <div class="ico">
+            <div class="notification">🔔</div>
+            <div class="mail">✉️</div>
+            <div class="prof"></div>
+        </div>
+    </div>
+
+    <div class="dash">
+
+        <div class="column">
+
+            <div class="pan" id="pan1">
+                <div class="img" id="img1"></div>
+                <div class="panname">Autumn cabin mood board</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@eunhan</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan6">
+                <div class="img" id="img6"></div>
+                <div class="panname">Balcony herb garden layout</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@skyblue</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan11">
+                <div class="img" id="img11"></div>
+                <div class="panname">Green interior inspiration</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@greenlife</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="pan" id="pan2">
+                <div class="img" id="img2"></div>
+                <div class="panname">Minimal desk setup</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@gridways</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan7">
+                <div class="img" id="img7"></div>
+                <div class="panname">Cloud typography poster</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@typeworld</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan12">
+                <div class="img" id="img12"></div>
+                <div class="panname">Modern blue poster</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@visuals</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="pan" id="pan3">
+                <div class="img" id="img3"></div>
+                <div class="panname">Terracotta kitchen renovation before and after, full tour</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@interior</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan8">
+                <div class="img" id="img8"></div>
+                <div class="panname">Warm home inspiration</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@homestyle</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan13">
+                <div class="img" id="img13"></div>
+                <div class="panname">Orange studio inspiration</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@studio</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="pan" id="pan4">
+                <div class="img" id="img4"></div>
+                <div class="panname">Lavender field wallpaper</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@wallpaper</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan9">
+                <div class="img" id="img9"></div>
+                <div class="panname">Sourdough starter troubleshooting guide</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@food</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan14">
+                <div class="img" id="img14"></div>
+                <div class="panname">Creative color inspiration</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@creative</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="pan" id="pan5">
+                <div class="img" id="img5"></div>
+                <div class="panname">Weekend hike essentials</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@outdoors</div>
+                </div>
+            </div>
+
+            <div class="pan" id="pan10">
+                <div class="img" id="img10"></div>
+                <div class="panname">Sunset gradient nail art ideas</div>
+                <div class="panid">
+                    <div class="panidimg"></div>
+                    <div class="panidname">@beauty</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
